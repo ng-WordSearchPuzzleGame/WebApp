@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WordSearchPuzzle puzzle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="js/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="js/puzzle/slidingPuzzle.js"></script>
+	<script type="text/javascript" src="js/puzzle/wordSearchPuzzle.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body ng-app="puzzleApp" background="img/bg5.jpg">
+
+	<div ng-include="type"></div>
+	<script type="text/ng-template" id="word-search-puzzle">
+		<div class = "word">
+		<legend style="margin-left:180px;"> Word Search Puzzle</legend>
+		<div id="word-search" ng-controller="wordSearchCtrl">
+			<ul class="words">
+				<li ng-repeat="word in puzzle.words" ng-class="{'found': word.found}">
+					{{word.name}}
+				</li>
+			</ul>
+			<word-search-puzzle matrix="matrix" words="words" api="puzzle"></word-search-puzzle>
+			<div class="status">
+				<img src = "img/word1.png"style = "width:300px;height:200px;margin-top:-450px;margin-left:-340px;">
+				<strong ng-show="puzzle.solved" ng-show="puzzle.solved">Solved!</strong>
+					<button class="solve2"ng-click="puzzle.solve()" ng-show="!puzzle.solved">Play Again</button>
+					<form action="start.html"align="center">
+				 	<input type="submit"value="Home"name="submit2">
+				 	</form>
+				 	<button class="ft"><a href="index.html">Instruction</a></button>
+
+			</div>
+		</div>
+		</div>
+	</script>
+</body>
+</html>

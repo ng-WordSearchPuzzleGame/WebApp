@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sliding puzzle</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+   <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+    <script type="text/javascript" src="js/lib/angular/angular.js"></script>
+    <script type="text/javascript" src="js/puzzle/slidingPuzzle.js"></script>
+	<script type="text/javascript" src="js/puzzle/wordSearchPuzzle.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body class="bgp" ng-app="puzzleApp"bg-color="darkred" >
+<img class = "slide"src="img/sliding.png">
+		<fieldset id="sliding-advanced" ng-controller="slidingAdvancedCtrl">
+			<legend align="center">Sliding Puzzle</legend>
+			<img class="pic" src="img/logo.jpg"width = "180">
+			<div ng-repeat="puzzle in puzzles">
+				<h2 class="font">Logo LAVerdad</h2>
+				<div class="src">
+					<ng-model="puzzle.src"/>
+				</div>
+				<div class="status">
+					moves: <strong>{{puzzle.api.moves}}</strong><br/>
+					solved: <strong>{{puzzle.api.isSolved()}}</strong>
+				</div>
+				<div class="size">
+					rows: <input type="text" ng-model="puzzle.rows" size="2"/>
+					cols: <input type="text" ng-model="puzzle.cols" size="2"/><br/>
+					</div>
+				<sliding-puzzle api="puzzle.api" size="{{puzzle.rows}}x{{puzzle.cols}}" src="{{puzzle.src}}"></sliding-puzzle>
+
+					<button class="shuffle"ng-click="puzzle.api.shuffle()" >Play Again</button>
+
+					<button class="solve"ng-click="puzzle.api.solve()" >Solve</button>
+
+					<form action="start.html"align="center">
+				 	<input type="submit"value="Home"></form>
+
+				 	<button class="bt"><a href="Index.html">Instruction</a></button>
+									
+			</div>
+
+
+		</fieldset>
+	</script>
+
+	</body>
+</html>

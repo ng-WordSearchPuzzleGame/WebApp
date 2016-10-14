@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  background: #999 url('../img/HTp (5).jpg');
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+img { margin: 0px; padding: 0px; border: none; }
+
+.top-header {
+  position: relative;
+  z-index: 10;
+  padding: 14px 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: inherit;
+}
+.phone-info{
+  color: blue;
+  font-family: cursive;
+}
+.phone-info a {
+  color:red;
+  font-family: monospace;
+}
+#HTp_main {
+  height: 180px;
+  background: url(../img/HTp.jpg) center top no-repeat;
+}
+#HTp_main #HTp_title {
+  width: 285px;
+  padding: 60px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+}
+#HTp_title h1 a {
+  margin: 0px;
+  padding: 0px;
+  font-family: monospace;
+  font-size: 30px;
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+#HTp_title h1 a span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: normal;
+  color: black;
+}
+#HTp_footer {
+  clear: both;
+  width: 1160px;
+  height: 240px;
+  padding: 0px 60px;
+  text-align: center;
+  background: url(../img/HTpb.jpg) center no-repeat;
+}
+#HTp_footer a{
+  font-weight: bold;
+  color: #000000;
+}
+
+#HTp_footer h2 a {
+  margin: 0px;
+  padding: 0px;
+  font-family: monospace;
+  font-size: 30px;
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+#HTp_footer p {
+  display: block;
+  margin-top: 10px;
+  font-family: cursive;
+  font-size: 14px;
+  font-weight: normal;
+  color: #000000;
+}
+.cs_article a{
+  margin-right: 700px;
+}
+.readmore {
+  font-family: jokerface;
+  text-decoration: line-through;
+  color: red;
+}
+#dulo {
+ clear: both;
+  width: 1160px;
+  height: 90px;
+  padding: 0px 60px;
+  text-align: center;
+  background: url(../img/HTpp.jpg) center no-repeat; 
+}
+}
