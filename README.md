@@ -8,10 +8,11 @@ Contribution of  each and every one
 	Villafuerte Adrian-	        coder/ editor (html)
 	Del Rosario Dave -	        expenses
 	Deguzman Reinerio -	        researcher
-	Vivar Leo -		              expenses
+	Vivar Leo -		        expenses
 	Wabinga Jessa Mae- 	        Researcher
-  Sarah ponce – 		          coder
-	Acao Indira –		            wifi/loptop owner
+        Sarah ponce – 		        coder
+	Acao Indira –		         laptop
+	adao Evan joshua-                expenses, wifi owner
 	
 
 
