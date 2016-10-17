@@ -1,8 +1,9 @@
 # [ng-WordSearchPuzzleGame](https://ng-wordsearchpuzzlegame.github.io/WebApp/)
 
 
-Group puzzle game:
-Contribution of  each and every one
+##Group puzzle game:
+##ROLE
+##Contribution of  each and every one
 	Jaison ramos -		          	coder / designer (css,html)
 	Boado, Jerome-		          	coder / angular.js
 	Villafuerte Adrian-	        	coder/ editor (html)
